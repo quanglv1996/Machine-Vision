@@ -26,5 +26,6 @@ def imageToString(img):
 def obj2str(obj):
     return codecs.encode(pickle.dumps(obj), "base64").decode()
 
+
 def str2obj(obj):
     return pickle.loads(codecs.decode(obj.encode(), "base64"))
